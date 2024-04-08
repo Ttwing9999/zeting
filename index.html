@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Zetangism: Godly Bottles</title>
+      <link rel="icon" type="image/x-icon" href="Zlogo.png">
+      
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+      <!--~ main style sheet -->
+      <link rel="stylesheet" href="style.css"/>
+   </head>
+   <body>
+      <div style="position: absolute;" class="popup-onload">
+         <div class="popup">
+            <h2>Future Updates: </h2>
+            <p>&bull; 💬 | Ability to post suggestions and view other peoples suggestions and Upvote and Downvote them.</p>
+            <p>&bull; 🎖️ | Ability to signup/login to the site and get access to sneekpeaks. </p>
+            <p>&bull; 📟 | Updated Chapter styles for a more sleek and modern design. </p>
+            <p>&bull; 🎮 | Embedded unblocked games... </p>
+            <br>
+            <p><i>This site is constantly getting updated, these are only a few things that will be added in the coming future!</i></p>
+            <p><i>- Zetangism Development Team</i></p>
+            <div class="close">Close</div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="header mainStyle">
+            <h1>Zetangism: Godly Bottles</h1>
+            <div class="dropdown"></div>
+         </div>
+         <div id="overlay"></div>
+         <div style="min-height: 200px;" class="content mainStyle">
+            <h2>Hey guys Zeting here,</h2>
+            <p>to all of you that enjoyed reading my work, thank you!</p>
+            <p>To all those kids who dislike Zetangism, why are you even wasting your time here? Move on with your life smh</p>
+            <p>Please join our discord server <strong>(link in lower left hand corner)</strong> if you wish to suggest things to be added.</p>
+            <!-- HTML !-->
+            <a href="/coming-soon" role="button" class="suggestion-btn">💬 Make a Suggestion</a>
+         </div>
+         <nav class="menu">
+            <ol>
+               <li class="menu-item">
+                  <a href="#">Index<i></i></a>
+                  <ol class="sub-menu">
+                     <li class="menu-item"><a href="/chapter1.html">Chapter 1</a></li>
+                     <li class="menu-item"><a href="/chapter2.html">Chapter 2</a></li>
+                     <li class="menu-item"><a href="/chapter3.html">Chapter 3</a></li>
+                     <li class="menu-item"><a href="/chapter4.html">Chapter 4</a></li>
+                  </ol>
+               </li>
+            </ol>
+         </nav>
+      </div>
+      <div class="credits">
+         Story by <a style="color: white;" target="_blank" href="https://discord.com/users/817958130813239316" rel="noopener">Ttwing</a>/Zeting<br>
+         Site Improved by <a style="color: white;" target="_blank" href="https://discord.com/users/717259136718471179" rel="noopener">Aquastone</a> & <a style="color: white;" target="_blank" href="https://discord.com/users/895187713261703188" rel="noopener">Kribit</a>       
+      </div>
+      <div class="discord-icon">
+         <a rel="noopener" href="https://discord.gg/JH8tFxunZd" target="_blank" >
+         <img src="discord.png" style=" height: 20px; width: 24px;" alt="discord logo">
+         </a>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+         $(function() {
+           var overlay = $('<div id="popup-overlay"></div>');
+           overlay.show();
+           overlay.appendTo(document.body);
+           $('.popup-onload').show();
+           $('.close').click(function() {
+             $('.popup-onload').hide();
+             overlay.appendTo(document.body).remove();
+             return false;
+           });
+           $('.x').click(function() {
+             $('.popup').hide();
+             overlay.appendTo(document.body).remove();
+             return false;
+           });
+         });
+      </script>
+   </body>
+</html>
+
